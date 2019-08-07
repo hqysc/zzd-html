@@ -1,0 +1,361 @@
+body {
+    background-color: #e8e8e8;
+}
+
+/* wrap */
+.wrap {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* main */
+.main {
+    width: 1290px;
+    margin: 0 auto;
+    /*background-color: #2aabd2;*/
+}
+
+/* 详情 */
+.detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 左 */
+.detail .left {
+    width: 870px;
+    height: 570px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+/* 左 大图 */
+.detail .left .detail-img {
+    width: 410px;
+    height: 570px;
+    background-color: #37ADDB;
+}
+
+.detail .left .detail-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 左 小图 网页端 */
+.detail .left .img-list {
+    width: 440px;
+    height: 570px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+/* 左 小图 项 */
+.detail .left .img-list .img-item {
+    width: 97.5px;
+    height: 130px;
+    margin: 10px 0 0 10px;
+    vertical-align: top;
+    display: inline-block;
+    background-color: #CCCCCC;
+}
+
+.detail .left .img-list .img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 右 */
+.detail .right {
+    width: 390px;
+    height: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    /*background-color: #FFFFFF;*/
+}
+
+.detail .right .info { /* 右 杂志 */
+    width: 100%;
+    height: 420px;
+    background-color: #FFFFFF;
+}
+
+.detail .right .info .btns { /* 右 按钮 */
+    width: calc(100% - 20px);
+    margin: 10px 10px 0 10px;
+    /*background-color: #9acfea;*/
+
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.detail .right .info .btns button { cursor: pointer; }
+
+.detail .right .info .btns .join-btn {  /* 加入书架 */
+    width: calc(40% - 5px);
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #0B7DAF;
+}
+
+.detail .right .info .btns .pay-btn {   /* 直接支付 */
+    width: calc(60% - 5px);
+    display: block;     /* 设置为块级元素 */
+}
+
+.detail .right .info .btns .pay-btn button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #09B209;
+}
+
+.detail .right .info .btns .pay-btn p {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 4px;
+    color: #09B209;
+}
+
+.detail .right .info .btns .pay-btn #productPrice {
+    margin-left: 6px;
+}
+
+.detail .right .info .content {  /* 杂志信息内容 */
+    width: calc(100% - 20px);
+    margin: 80px 10px 0;
+    overflow: hidden;
+    /*background-color: #9acfea;*/
+}
+
+.detail .right .info .content .title {  /* 杂志名称 */
+    width: 86%;
+}
+
+.detail .right .info .content .title h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.detail .right .info .content .tags {   /* 标签 */
+    width: 100%;
+    color: #fff;
+    font-size: 0;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.detail .right .info .content .tags .tag {
+    height: 18px;
+    font-size: 12px;
+    margin-right: 2px;
+    padding: 0 6px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    line-height: 18px;
+}
+
+.detail .right .info .content .msg {
+    margin-top: 20px;
+}
+
+.detail .right .info .content .msg p {
+    margin: 4px 0;
+    padding: 0;
+    font-size: 12px;
+    color: #7F7F7F;
+}
+
+.detail .right .advert {    /* 右 广告 */
+    width: 100%;
+    height: 140px;
+    /*background-color: #cbcbcb;*/
+}
+
+.detail .right .advert img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 描述 */
+.explain {
+    background-color: #FFFFFF;
+}
+
+.explain .content {
+    width: 1270px;
+    height: 100%;
+    margin: 30px auto 20px;
+    padding: 10px 0;
+    /*background-color: #9acfea;*/
+}
+
+/* 广告 移动端 */
+.advert-mobile {
+    width: 100%;
+    height: 35vw;
+    margin: 3.2vw auto;
+    display: none;
+    background-color: #f1f1f1;
+}
+
+.advert-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 优选推荐 */
+.recommend-title {
+    font-size: 14px;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+/*
+    640px
+ */
+@media screen and (max-width: 1290px) {
+    /* body */
+    body {
+        background-color: #FFFFFF;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    a {
+        outline: none;-moz-outline-style: none;
+    }
+
+    .wrap {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+
+    .main {     /* main */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .detail {   /* 详情 */
+        /*box-sizing: border-box;*/
+        /*background-color: #4cae4c;*/
+        flex-wrap: wrap;
+    }
+
+    .detail .left {    /* 左 */
+        width: 100%;
+        height: 80vw;
+    }
+
+    .detail .left .detail-img {     /* 左 大图 */
+        width: 56%;
+        height: 100%;
+        /*background-color: #37ADDB;*/
+    }
+
+    .detail .left .img-list {   /* 左 小图 客户端 */
+        width: 44%;
+        height: 100%;
+    }
+
+    .detail .left .img-list .img-item {
+        width: 29.9333333%;
+        height: 23.7%;
+        /*height: 23.69%;*/
+        margin: 0 0 3.4% 3.4%;
+    }
+
+    .detail .right {    /* 右 */
+        width: 100%;
+        height: auto;
+        margin-top: 3.2vw;
+        background-color: #E5E5E5;
+    }
+
+    .detail .right .info {   /* 右 杂志 */
+        width: 100%;
+        height: auto;
+        /*background-color: #2aabd2;*/
+    }
+
+    .detail .right .info .btns {    /* 右 按钮 */
+        width: 100%;
+        margin: 0;
+    }
+
+    .detail .right .info .btns button {
+        font-size: 2.8vw;
+    }
+
+    .detail .right .info .btns .join-btn {  /* 加入书架 */
+        width: calc(50% - .6vw);
+        height: 7vw;
+    }
+
+    .detail .right .info .btns .pay-btn {   /* 直接支付 */
+        width: calc(50% - .6vw);
+    }
+
+    .detail .right .info .btns .pay-btn button{
+        height: 7vw;
+    }
+
+    .detail .right .info .btns .pay-btn p {
+        margin-top: 1vw;
+        font-size: 2.2vw;
+        text-align: right;
+    }
+
+    .detail .right .info .content {  /* 杂志信息内容 */
+        width: 100%;
+        margin: 1.6vw 0 0;
+        overflow: hidden;
+        /*background-color: #9acfea;*/
+    }
+
+    .detail .right .info .content .title h2 {   /* 标题字体 */
+        /*font-size: 3.6vw;*/
+        font-size: 14px;
+    }
+
+    .detail .right .info .content .tags {   /* 标签 */
+        margin-top: 5px;
+    }
+
+    .detail .right .advert {    /* 右 广告 web端 */
+        display: none;
+    }
+
+    /* 描述 */
+    .explain {
+        /*background-color: #E5E5E5;*/
+    }
+
+    .explain .content{
+        width: 100%;
+        margin: 3.2vw auto 0;
+        padding: 0;
+    }
+
+    .advert-mobile {
+        display: block;
+    }
+
+    .recommend-title {
+        font-size: 12px;
+    }
+}
+

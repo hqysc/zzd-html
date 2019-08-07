@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>zzd</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/mobile/mobile.css">
+    <link rel="stylesheet" href="css/bread-crumbs/bread-crumbs.css">
+    <script src="js/util/clipboard.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common/common.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="head">
+        <div class="inner">
+            <a href=""><div class="logo"></div></a> <!-- Logo -->
+            <div class="navbar">
+                <!-- menu-left -->
+                <div class="menu-left">
+                    <ul>
+                        <a href="index.html"><li class="menu-item">首页</li></a>
+                        <a href=""><li class="menu-item">查找杂志</li></a>
+                        <a href=""><li class="menu-item">视频资料</li></a>
+                        <a href=""><li class="menu-item">帮助中心</li></a>
+                        <a href=""><li class="menu-item">VIP通道</li></a>
+                    </ul>
+                </div>
+                <!-- menu right -->
+                <div class="menu-right">
+                    <ul>
+                        <a href=""><li class="menu-item">我的书架</li></a>
+                        <li class="login">
+                            <a href="">登录</a>
+                            <a href="" class="register">注册</a>
+                        </li>
+                        <a><li class="weixin"></li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="navbar-toggle">  <!-- 切换按钮 手机端 -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> <!-- toggle -->
+        </div>
+
+        <!-- 侧边栏 手机端 -->
+        <div class="navbar-collapse">   <!-- 侧边栏 -->
+
+            <div class="navbar-head">     <!-- 标题栏 -->
+                <button class="navbar-close"></button>     <!-- 关闭按钮 -->
+            </div>
+            <!-- 内容 -->
+            <div class="content">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <!-- 部分导航按钮 手机端 -->
+                        <div class="tab-head">
+                            <ul>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="head-bottom"></div>
+    <!-- 导航栏 end -->
+
+    <!-- 面包屑导航 -->
+    <div class="bread-crumbs">
+        <ul>
+            <li class="title">当前位置：</li>
+            <li><a href="/index">首页</a></li>
+            <li> > </li>
+            <li><a>我的书架</a></li>
+        </ul>
+    </div>
+    <!-- 面包屑导航结束 -->
+
+    <!-- wrap -->
+    <div class="wrap">
+        <div class="main">
+            <!-- user -->
+            <div class="user">
+                <!-- 切换页面 -->
+                <div class="switch-page">
+                    <div class="inner">
+                        <a href="cart.html"><div class="btn" id="unselected-page">已选收藏</div></a>
+                        <a href=""><div class="btn" id="selected-page">已买订单</div></a>
+                    </div>
+                </div>
+
+                <!-- 用户信息 -->
+                <div class="info">
+                    <div class="title"><p>用户信息</p></div>
+                    <div class="inner">
+                        <!-- 信息 -->
+                        <div class="msg">
+                            <p>用户名：杂志用户1</p>
+                            <p>等级：普通会员</p>
+                            <p>书币：1000</p>
+                        </div>
+                        <!-- 按钮 -->
+                        <div class="btns">
+                            <a href=""><div id="edit-pw" class="btn">修改登录密码</div></a>
+                            <a href=""><div id="recharge" class="btn">充值书币</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 收藏列表 -->
+            <div class="cart">
+                <!-- list title -->
+                <div class="title">
+                    <!-- 全选框 -->
+                    <label>
+                        <p>全选：</p>
+                        <div class="check-all">
+                            <input type="checkbox">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="cart-scrolls">  <!-- 移动端使用 -->
+                    <!-- title -->
+                    <div class="item-title">
+                        <div class="date">2019-01-03</div>
+                        <div class="price">书币：120</div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <label>
+                            <div class="inner">
+                                <!-- image -->
+                                <div class="image">
+                                    <img src="img/z1.jpg" alt="">
+                                </div>
+                                <!-- info -->
+                                <div class="content">
+                                    <div class="info">
+                                        <!-- name -->
+                                        <div class="name">
+                                            <a href="">儿童杂志2-6岁 Highlights High Five</a>
+                                        </div>
+                                        <!-- tags -->
+                                        <div class="tags">
+                                            <div class="tag" style="background-color: #FF0086"><p>2018</p></div>
+                                            <div class="tag" style="background-color: #7C66FF">杂志合辑</div>
+                                            <div class="tag" style="background-color: #7F7F7F">西班牙语</div>
+                                            <div class="tag" style="background-color: #FF7F00">New</div>
+                                        </div>
+                                    </div>
+                                    <div class="date">2019-01-01</div>  <!-- 时间 -->
+                                    <div class="price">9999</div>   <!-- 价格 -->
+                                    <div class="handle">
+                                        <div class="del"><a href="javascript:void(0);">删除商品</a></div>  <!-- 删除 -->
+                                        <div class="check"><input type="checkbox"></div>    <!-- 选择 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- title -->
+                    <div class="item-title">
+                        <div class="date">2019-01-02</div>
+                        <div class="price">书币：20</div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <label>
+                            <div class="inner">
+                            </div>
+                        </label>
+                    </div>
+
+                    <!-- title -->
+                    <div class="item-title">
+                        <div class="date">2019-01-01</div>
+                        <div class="price">书币：40</div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <div class="inner"></div>
+                    </div>
+
+                    <!-- title -->
+                    <div class="item-title">
+                        <div class="date">2019-01-01</div>
+                        <div class="price">书币：60</div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <div class="inner"></div>
+                    </div>
+
+                    <!-- title -->
+                    <div class="item-title">
+                        <div class="date">2019-01-01</div>
+                        <div class="price">书币：80</div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <div class="inner"></div>
+                    </div>
+                    <!-- title -->
+                    <div class="item-title">
+                        <div class="date">2019-01-01</div>
+                        <div class="price">书币：80</div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <div class="inner"></div>
+                    </div>
+                    <!-- title -->
+                    <div class="item-title">
+                        <div class="date">2019-01-01</div>
+                        <div class="price">书币：80</div>
+                    </div>
+                    <!-- item -->
+                    <div class="item">
+                        <div class="inner"></div>
+                    </div>
+                </div>
+
+                <!-- 结算 手机页面固定在底部 -->
+                <div class="cart-bottom">
+                    <div class="pay-price">
+                        <p>结算书币：</p>
+                        <p class="price-total">100</p>
+                    </div>
+
+                    <form id="frm" method="post" action="">
+                        <input type="submit" class="pay-btn" value="确认结算">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 侧边栏遮罩 -->
+        <div class="navbar-shadow"></div>
+    </div>
+
+    <script>
+        $(function () {
+
+        });
+    </script>
+
+</body>
+</html>

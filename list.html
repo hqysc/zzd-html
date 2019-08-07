@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/mobile/mobile.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/custom/check.css">
+    <link rel="stylesheet" href="css/bread-crumbs/bread-crumbs.css">
+    <link rel="stylesheet" href="css/goods.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/head.css">
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common/common.js"></script>
+</head>
+<body>
+    <!-- nav -->
+    <header class="head">
+        <div class="inner">
+            <a href=""><div class="logo"></div></a> <!-- Logo -->
+            <div class="navbar">
+                <!-- menu-left -->
+                <div class="menu-left">
+                    <ul>
+                        <a href=""><li class="menu-item">首页</li></a>
+                        <a href=""><li class="menu-item">查找杂志</li></a>
+                        <a href=""><li class="menu-item">视频资料</li></a>
+                        <a href=""><li class="menu-item">帮助中心</li></a>
+                        <a href=""><li class="menu-item">VIP通道</li></a>
+                    </ul>
+                </div>
+                <!-- menu right -->
+                <div class="menu-right">
+                    <ul>
+                        <a href=""><li class="menu-item">我的书架</li></a>
+                        <li class="login">
+                            <a href="">登录</a>
+                            <a href="" class="register">注册</a>
+                        </li>
+                        <a><li class="weixin"></li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="navbar-toggle">  <!-- 切换按钮 手机端 -->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> <!-- toggle -->
+        </div>
+
+        <!-- 侧边栏 手机端 -->
+        <div class="navbar-collapse">   <!-- 侧边栏 -->
+
+            <div class="navbar-head">     <!-- 标题栏 -->
+                <button class="navbar-close"></button>     <!-- 关闭按钮 -->
+            </div>
+            <!-- 内容 -->
+            <div class="content">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <!-- 部分导航按钮 手机端 -->
+                        <div class="tab-head">
+                            <ul>
+                                <!--<li><a href=""></a></li>-->
+                                <!--<li><a href=""></a></li>-->
+                                <!--<li><a href=""></a></li>-->
+                                <!--<li><a href=""></a></li>-->
+                                <!--<li><a href=""></a></li>-->
+                            </ul>
+
+
+                        </div>
+                    </li>
+
+                    <li class="menu-item"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="head-bottom"></div>
+
+    <!-- 面包屑导航 -->
+    <div class="bread-crumbs">
+        <ul>
+            <li class="title">当前位置：</li>
+            <li><a href="/index">首页</a></li>
+            <li> > </li>
+            <li><a>杂志详情</a></li>
+        </ul>
+    </div>
+
+    <!-- wrap -->
+    <div class="wrap">
+        <div class="main">
+            <!-- 筛选 -->
+            <div class="cate">
+                <div class="list" id="checkDiv">
+                    <div class="content">
+                        <p class="title">选择分类：</p>
+                        <ul>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="1">
+                                    <p>外语读物</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="2">
+                                    <p>艺术设计</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="3">
+                                    <p>建筑设计</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="4">
+                                    <p>商业空间</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="5">
+                                    <p>室内设计</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="6">
+                                    <p>庭院园艺</p>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content">
+                        <p class="title">选择语言：</p>
+                        <ul>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="1">
+                                    <p>中文</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="2">
+                                    <p>英文</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="3">
+                                    <p>法文</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="4">
+                                    <p>日文</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="5">
+                                    <p>西班牙文</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="6">
+                                    <p>意大利文</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="6">
+                                    <p>德文</p>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="cate-radio">
+                                    <input type="checkbox" class="categoryCheck" name="check" value="6">
+                                    <p>荷兰文</p>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- list -->
+            <div class="goods container">
+                <div class="goods-list">
+                    <ul>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar">
+                                <div class="inner">
+                                    <div class="title">     <!-- 标题 -->
+                                        <a href="">美国新娘 Brides USA 5本</a>
+                                    </div>
+                                    <a href=""><div class="join"></div></a>    <!-- 收藏 -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- page -->
+            <div class="page">
+                <ul>
+                    <li><a href=""> < </a></li>
+                    <li class="page-selected"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href="">6</a></li>
+                    <li><a href="">7</a></li>
+                    <li><a href="">8</a></li>
+                    <li><a href=""> > </a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 侧边栏遮罩 -->
+        <div class="navbar-shadow"></div>
+    </div>
+
+</body>
+</html>

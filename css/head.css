@@ -1,0 +1,387 @@
+.head {
+    width: 100%;
+    background-color: #FFFFFF;
+    position: fixed;
+    z-index: 999;
+}
+
+.head .inner {
+    width: 1290px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 0;
+    display: flex;
+    display: -webkit-flex;
+    background-color: #FFFFFF;
+    /*position: fixed;*/
+    /*left: 80%;*/
+}
+
+.head .inner .logo {    /* logo */
+    width: 90px;
+    height: 100%;
+    margin-right: 20px;
+    background: transparent url("../icon/zzd_logo.jpg") no-repeat center;
+    background-size: contain;   /* 横向拉伸 在background下面 */
+    flex-shrink: 0; /* 当空间受到挤压后 该元素不会变化 */
+}
+
+/* 导航栏 客户端 */
+.head .inner .navbar {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 1;
+
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+.head .inner .navbar .menu-left {   /* left */
+    font-size: 0;   /* 消除 inline-block 产生的间距 */
+}
+
+.head .inner .navbar .menu-left ul {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.head .inner .navbar .menu-left ul li {
+    padding: 0 20px;
+    line-height: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.head .inner .navbar .menu-item:hover { /* 顶部条 */
+    line-height: 44px;  /* 顶部条出现 高度发生变化 */
+    border-top: 3px solid #37ADDB;
+}
+
+.head .inner .navbar .menu-left a {
+    color: #666;
+}
+
+.head .inner .navbar .menu-right {  /* right */
+    font-size: 0;   /* 消除 inline-block 产生的间距 */
+    overflow: hidden;
+}
+
+.head .inner .navbar .menu-right ul {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.head .inner .navbar .menu-right li {
+    height: 50px;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+
+.head .inner .navbar .menu-right a {
+    color: #666;
+}
+
+.head .inner .navbar .menu-right .login a {
+    margin-left: 15px;
+}
+
+.head .inner .navbar .menu-right .weixin {
+    margin-left: 30px;
+}
+
+.head .inner .navbar .menu-right .weixin a { /* 微信 */
+    width: 40px;
+    height: 100%;
+    margin: 0;
+    display: block;
+    /*margin: 0 0 0 20px;*/
+    background: transparent url("../icon/wechat.png") no-repeat center;
+    background-size: contain;   /* 横向拉伸 在background下面 */
+}
+
+/* 搜索框 */
+.head .inner .navbar .menu-right .serbox {
+    width: 260px;
+    height: 38px;
+    margin: 6px 15px 6px auto;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.head .inner .navbar .menu-right .serbox .search {
+    width: 100%;
+    height: 100%;
+    padding: 0 38px 0 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px #B2B2B2 solid;
+    outline: none;
+    box-sizing:border-box;
+    position: absolute;
+}
+
+.head .inner .navbar .menu-right .serbox .search-btn {
+    width: 38px;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    border: none;
+    outline: none;
+    box-sizing:border-box;
+    background: transparent url("../icon/search.png") no-repeat center;
+    background-size: 60% 60%;   /* 横向拉伸 在background下面 */
+    cursor: pointer;
+}
+
+/* 切换按钮 */
+.head .inner .navbar-toggle {
+    padding: 0 16px;
+    border: none;
+    outline: none;
+    display: none;
+    background-image: none;
+    background-color: transparent;
+}
+
+.head .inner .navbar-toggle .icon-bar {
+    width: 22px;
+    height: 2px;
+    margin: 4.5px 0;
+    display: block;
+    border-radius: 1px;
+    background-color: #4C4C4C;
+}
+
+/* bottom */
+.head-bottom {  /* 底部 */
+    width: 100%;
+    height: 50px;
+}
+
+/* 侧边导航栏 */
+.navbar-on {    /* body navbar-on 防止页面放大时出现延迟 */
+    transition: none;
+}
+
+.head .navbar-collapse {
+    width: 80%;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    margin:0;
+    position: fixed;
+    overflow: auto;
+    border: none;
+    box-sizing: border-box;
+    /*background-color: #445370;*/
+    background-color: #37ADDB;
+    display: none;
+    /*overflow-x:auto; !* 超出内容出现滑动条 *!*/
+}
+
+.navbar-head {     /* 标题 */
+    width: inherit; /* 继承父元素宽度 是该宽度的100% */
+    height: 50px;
+    /*top: 0;*/
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar-head .navbar-close {    /* 关闭按钮 */
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    float: right;
+    border: none;
+    outline: none;
+    background: transparent url("../icon/close_white.png") no-repeat center;
+    background-size: contain;   /* 横向拉伸 在background下面 */
+}
+
+/* menu */
+.head .navbar-collapse .menu {    /* 左边内容 80% */
+    width: calc(100% - 20px);
+    margin: 50px 10px 0;
+}
+
+.head .navbar-collapse .menu .item {
+    width: 100%;
+    height: auto;
+}
+
+/* 搜索框 */
+.head .navbar-collapse .serbox {
+    width: 100%;
+    height: 38px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.head .navbar-collapse .serbox .search {
+    width: 100%;
+    height: 100%;
+    padding: 0 38px 0 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-sizing:border-box;
+    position: absolute;
+}
+
+.head .navbar-collapse .serbox .search-btn {
+    width: 38px;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    border: none;
+    outline: none;
+    box-sizing:border-box;
+    background: transparent url("../icon/search.png") no-repeat center;
+    background-size: 60% 60%;   /* 横向拉伸 在background下面 */
+    cursor: pointer;
+}
+
+/* 1310px - 1120px */
+@media screen and (max-width: 1310px) and (min-width: 1130px) {
+    .head .inner {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .head .inner .logo {
+        width: 75px;
+        margin-left: 10px;
+    }
+
+    .head .inner .navbar .menu-right {
+        margin-right: 10px;
+    }
+}
+
+/* 1210 */
+@media screen and (max-width: 1210px) {
+    .head .inner .navbar .menu-right .serbox {
+        width: 180px;
+    }
+}
+
+/* 1130px */
+@media screen and (max-width: 1130px) {
+    /* 侧边栏 */
+    .navbar-on {    /* body 右移 */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        overflow: hidden;
+        transition: all .3s ease-out 0s;
+        transform: translateX(80%);
+        -webkit-transform: translateX(80%);
+    }
+
+    .navbar-on-shadow {    /* 遮罩 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100000;
+        content: '';
+        background: rgba(0,0,0,.3);
+    }
+
+    .head .navbar-collapse {    /* 侧边导航栏 */
+        display: block;
+    }
+
+    /* 导航栏 移动端 */
+    .head .inner {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .head .inner .logo {    /* Logo */
+        width: 75px;
+        margin-left: 10px;
+    }
+
+    .head .inner .navbar {
+        -webkit-justify-content: flex-end;
+    }
+
+    .head .inner .navbar .menu-left {
+        display: none;
+    }
+
+    .head .inner .navbar .menu-right {
+        margin-right: 8px;
+    }
+
+    .head .inner .navbar .menu-right ul li {
+        margin-left: 24px;
+        font-size: 16px;
+    }
+
+    .head .inner .navbar .menu-right .login {
+        margin-left: 24px;
+        flex-shrink: 0;
+    }
+
+    .head .inner .navbar .menu-right .login a {
+        margin-left: 0;
+    }
+
+    .head .inner .navbar .menu-right .serbox {
+        display: none;
+    }
+
+    .head .inner .navbar .menu-right .logout {
+        display: none;
+    }
+
+    .head .inner .navbar .menu-right .register {
+        display: none;
+    }
+
+    .head .inner .navbar .menu-right .weixin {
+        display: none;
+    }
+
+    .head .inner .navbar-toggle {   /* 切换按钮出现 */
+        display: block;
+        /*background-color: #9acfea;*/
+    }
+
+    /* 导航栏内容 */
+}
+
+/* 375px */
+@media screen and (max-width: 375px) {
+    /* 导航栏 移动端 */
+    .head .inner .navbar .menu-right {
+        margin-right: 6px;
+    }
+
+    .head .inner .navbar .menu-right ul li {
+        margin-left: 22px;
+        font-size: 14px;
+    }
+
+    .head .inner .navbar .menu-right .login {
+        margin-left: 22px;
+    }
+}

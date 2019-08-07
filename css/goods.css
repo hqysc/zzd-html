@@ -1,0 +1,337 @@
+.container {
+    width: 1290px;
+    /*padding: 0 10px;*/
+}
+
+.goods {
+    margin: 0 auto;
+}
+
+#hotList {  /* 推荐列表id 网页端 */
+    display: block;
+}
+
+.list-title {   /* 杂志列表标题 */
+    margin-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.list-title h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #2e2a2b;
+}
+
+.list-title p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #2e2a2b;
+}
+
+.btn-more a {   /* 更多按钮 */
+    color: #0f0f0f;
+    text-align: center;
+}
+
+.btn-more a:hover {
+    color: #0f0f0f;
+}
+
+.btn-more p {
+    width: 168px;
+    height: 38px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    line-height: 38px;
+    font-size: 16px;
+}
+
+/*
+    杂志列表
+*/
+.goods-list {
+    font-size: 0;   /* 消除 inline-block 产生的间距 */
+}
+
+.goods-list ul {
+    margin: 0 -15px;
+    text-align: center;
+}
+
+.goods-list ul li {
+    display: inline-block;
+    vertical-align: top;
+    /*background-color: #37ADDB;*/
+}
+
+/* 杂志 item */
+.goods-list .item {
+    width: 190px;
+    margin: 0 15px 25px;
+}
+
+/* 杂志信息 */
+.goods-list .item .pic {    /* 杂志图片 */
+    width: 100%;
+    height: 258px;
+    background-color: #f0ad4e;
+}
+
+.goods-list .item .pic  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.goods-list .item .tags {   /* 杂志标签 */
+    width: 100%;
+    height: 22px;
+    position: relative;
+    overflow: hidden;
+    /*background-color: #9acfea;*/
+}
+
+.goods-list .item .tags .content {
+    display: flex;
+    display: -webkit-flex;
+    margin: 0 -2px;
+
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.goods-list .item .tags .content .tag {
+    text-align: center;
+    margin: 2px 1px;
+    height: 18px;
+    flex: 1;
+}
+
+.goods-list .item .tags .end-tag {  /* new标签 */
+    display: block;
+}
+
+.goods-list .item .bar {    /* bar */
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.goods-list .item .bar .inner{    /* bar btn-more*/
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;  /* 底部对齐 */
+    /*background-color: #9acfea;*/
+}
+
+.goods-list .item .bar .inner .title {  /* 杂志名称 */
+    width: calc(100% - 20px);
+    height: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.goods-list .item .bar .inner .title a {
+    color: #000;
+    font-size: 14px;
+
+    word-wrap:break-word;
+    word-break:break-all;
+
+    overflow: hidden;
+    text-overflow: ellipsis;    /* 字符超出部分用省略号显示 */
+    display: -webkit-box;   /* 将对象作为弹性伸缩盒子模型显示 */
+    -webkit-line-clamp: 2;  /* 设置字符允许显示的行数 */
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;   /* 必须结合的属性 设置或检索伸缩盒对象的子元素的排列方式 */
+    /* autoprefixer: on */
+    /*background-color: #f0ad4e;*/
+}
+
+.goods-list .item .bar .inner .join {   /* 收藏按钮 */
+    width: 15px;
+    height: 15px;
+    background: transparent url("../icon/join.png") no-repeat center;
+    background-size: contain;
+}
+
+/*
+    1024px - 1290px
+ */
+@media screen and (max-width: 1290px) and (min-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+
+    .goods-list {
+        margin: 0 2%;
+    }
+
+    .goods-list ul {
+        margin: 0 -2%;
+    }
+
+    .goods-list .item {
+        width: 14.34%;
+        margin: 0 1% 2%;
+    }
+
+    /* 杂志信息 */
+    .goods-list .item .pic {
+        width: 100%;
+        height: 18vw;
+    }
+
+    .goods-list .item .tags {
+        width: 100%;
+        height: 1.7vw;
+    }
+
+    .goods-list .item .tags .content {
+        margin: 0 -.1vw;
+        font-size: 10px;
+        line-height: 1.4vw;
+    }
+
+    .goods-list .item .tags .content .tag {
+        margin: .15vw .1vw;
+        height: 1.4vw;
+    }
+
+    .goods-list .item .bar {
+        height: 50px;
+    }
+
+}
+
+/*
+    640px - 1025px
+ */
+@media screen and (max-width: 1025px) and (min-width: 640px) {
+    .container {
+        width: 100%;
+    }
+
+    .goods-list {
+        margin: 0 1%;
+    }
+
+    .goods-list ul {
+        margin: 0 -1%;
+    }
+
+    .goods-list .item {
+        width: 22%;
+        margin: 0 1.2% 2.4%;
+    }
+
+    /* 杂志信息 */
+    .goods-list .item .pic {    /* 杂志图片 */
+        width: 100%;
+        height: 32vw;
+    }
+
+    .goods-list .item .tags {   /* 杂志标签 */
+        width: 100%;
+        height: 2.6vw;
+    }
+
+    .goods-list .item .tags .content {
+        margin: 0 -.2vw;
+        font-size: 1.3vw;
+        line-height: 2.2vw;
+    }
+
+    .goods-list .item .tags .content .tag {
+        margin: .2vw .1vw;
+        height: 2.2vw;
+    }
+
+    .goods-list .item .bar {
+        height: 70px;
+    }
+}
+
+/*
+    640px
+ */
+@media screen and (max-width: 640px) {
+    /* 推荐列表 */
+    #hotList {
+        display: none;
+    }
+
+    /* 列表标题 */
+    .list-title {
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .list-title h2 {
+        font-size: 16px;
+    }
+
+    .list-title p {
+        display: none;
+    }
+
+    /* 更多按钮 */
+    .btn-more {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .btn-more p {
+        background-color: #ebebeb;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* 杂志列表 */
+    .goods-list {
+        margin: 0 auto;
+    }
+
+    .goods-list ul {
+        margin: 0 -2%;
+    }
+
+    .goods-list .item {
+        width: 47%;
+        margin: 0 1% 2%;
+    }
+
+    /* 杂志信息 */
+    .goods-list .item .pic {
+        width: 100%;
+        height: 58vw;
+    }
+
+    .goods-list .item .bar {    /* 杂志名称 */
+        height: 60px;
+    }
+}
+
+/*
+    375
+ */
+@media screen and (max-width: 400px) {
+    .goods-list .item .tags .content {
+        font-size: 12px;
+    }
+
+    .goods-list .item .tags .end-tag {  /* new标签 */
+        display: none;
+    }
+}

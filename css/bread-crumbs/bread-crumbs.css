@@ -1,0 +1,30 @@
+.bread-crumbs {
+    width: 1290px;
+    margin: 25px auto 6px;
+    color: #7F7F7F;
+    font-size: 12px;
+    /*background-color: #9acfea;*/
+}
+
+.bread-crumbs ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.bread-crumbs li {
+    margin-right: 6px;
+}
+
+.bread-crumbs a {
+    color: #7F7F7F;
+}
+
+/*
+    1290px
+ */
+@media screen and (max-width: 1290px) {
+    .bread-crumbs {
+        width: calc(100% - 20px);
+    }
+}

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/goods.css">
+    <link rel="stylesheet" href="css/mobile/mobile.css">    <!-- mobile -->
+    <link rel="stylesheet" href="css/banner/banner.css">    <!-- banner -->
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">    <!-- swiper -->
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common/common.js"></script> <!-- common -->
+    <script src="swiper/js/swiper.min.js"></script> <!-- swiper -->
+</head>
+<body>
+    <!-- header -->
+    <header class="head">
+        <div class="inner">
+            <!-- logo -->
+            <a href=""><div class="logo"></div></a> <!-- Logo -->
+            <!-- 导航 客户端 -->
+            <div class="navbar">
+                <!-- menu-left -->
+                <div class="menu-left">
+                    <ul>
+                        <a href=""><li class="menu-item">首页</li></a>
+                        <a href=""><li class="menu-item">查找杂志</li></a>
+                        <a href=""><li class="menu-item">视频资料</li></a>
+                        <a href=""><li class="menu-item">帮助中心</li></a>
+                        <a href=""><li class="menu-item">VIP通道</li></a>
+                    </ul>
+                </div>
+                <!-- menu right -->
+                <div class="menu-right">
+                    <ul>
+                        <!-- 搜索框 -->
+                        <div class="serbox">
+                            <input class="search" type="text" placeholder="输入关键词搜索..." />
+                            <input class="search-btn" type="button" value="" />
+                        </div>
+                        <li><a href="">我的书架</a></li>
+                        <li class="login">
+                            <a href="">登录</a>
+                            <a class="register" href="">注册</a>
+                            <!--<a class="logout" href="">注销</a>-->
+                        </li>
+                        <li class="weixin"><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 切换按钮 手机端 -->
+            <button class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- 侧边栏 手机端 -->
+        <div class="navbar-collapse">
+            <!-- 标题栏 -->
+            <div class="navbar-head">
+                <button class="navbar-close"></button>     <!-- 关闭按钮 -->
+            </div>
+            <!-- 内容 -->
+            <div class="menu">
+                <!-- 搜索框 -->
+                <div class="item">
+                    <div class="serbox">
+                        <input class="search" type="text" placeholder="输入关键词搜索..." />
+                        <input class="search-btn" type="submit" value="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="head-bottom"></div>
+    <!-- header end -->
+
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- 广告 -->
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- 1 -->
+                    <div class="swiper-slide" style="background-color: cornflowerblue;">
+                        <div class="image">
+                            <a href=""><img src="img/banner/1.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="swiper-slide" style="background-color: indianred;">
+                        <div class="image">
+                            <a href=""><img src="img/banner/2.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="swiper-slide" style="background-color: mediumseagreen;">
+                        <div class="image">
+                            <a href=""><img src="img/banner/3.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 左右导航按钮 -->
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+        </div>
+        <!-- 标签 网页端 -->
+        <div class="tab-nav">
+            <a id="a-hot" href="">精选推荐</a>
+            <a id="a-new" href="">最新更新</a>
+            <a id="a-free" href="">限时免费</a>
+        </div>
+        <!-- 搜索框 手机端 -->
+        <div class="serbox">
+            <input class="search" type="text" placeholder="输入关键词搜索..." />
+            <input class="search-btn" type="submit" value="" />
+        </div>
+        <!-- 杂志标签 手机端 -->
+        <div class="catewords">
+            <ul>
+                <li><a href="">时尚杂志</a></li>
+                <li><a href="">艺术设计</a></li>
+                <li><a href="">摄影艺术</a></li>
+                <li><a href="">工业设计</a></li>
+                <!--<li><a href="">建筑设计</a></li>-->
+                <!--<li><a href="">环艺景观</a></li>-->
+
+                <li><a href="">美食烹饪</a></li>
+                <li><a href="">婚纱摄影</a></li>
+                <li><a href="">花艺插花</a></li>
+                <li><a href="">旅行旅游</a></li>
+                <!--<li><a href="">健身运动</a></li>-->
+                <!--<li><a href="">电影影评</a></li>-->
+
+                <li><a href="">地理历史</a></li>
+                <li><a href="">专业技术</a></li>
+                <li><a href="">手工工艺</a></li>
+                <li><a href="">科学自然</a></li>
+                <!--<li><a href="">财经新闻</a></li>-->
+                <!--<li><a href="">电子游戏</a></li>-->
+            </ul>
+        </div>
+        <!-- 部分导航按钮 手机端 -->
+        <div class="tab-head">
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="icon icon-search"></div>
+                        <div class="title">查找杂志</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-vedio"></div>
+                        <div class="title">视频资料</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-discovery"></div>
+                        <div class="title">帮助中心</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-cart"></div>
+                        <div class="title">VIP通道</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="icon icon-wechat"></div>
+                        <div class="title">详细我们</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 杂志 -->
+        <div class="main">
+            <div class="goods container">
+                <!-- 列表 -->
+                <div class="goods-list" id="hotList">
+                    <ul>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar">
+                                <div class="inner">
+                                    <div class="title">     <!-- 标题 -->
+                                        <a href="">美国新娘 Brides USA 5本</a>
+                                    </div>
+                                    <a href=""><div class="join"></div></a>    <!-- 收藏 -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="goods-list" id="indexList">
+                    <ul>
+                        <div class="list-title">
+                            <h2>时尚杂志</h2>
+                            <p>时尚杂志</p>
+                        </div>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar">
+                                <div class="inner">
+                                    <div class="title">     <!-- 标题 -->
+                                        <a href="">美国新娘 Brides USA 5本</a>
+                                    </div>
+                                    <a href=""><div class="join"></div></a>    <!-- 收藏 -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                        <li class="item">
+                            <!-- 图片 -->
+                            <div class="pic">
+                                <a href=""><img src="img/z1.jpg" alt=""></a>
+                            </div>
+                            <!-- 标签 -->
+                            <div class="tags">
+                                <div class="content">
+                                    <div class="tag" style="background-color: #FF0086; flex: 1;">2018</div>
+                                    <div class="tag" style="background-color: #7C66FF; flex: 1.6;">杂志合辑</div>
+                                    <div class="tag" style="background-color: #7F7F7F; flex: 1.6;">西班牙语</div>
+                                    <div class="tag end-tag" style="background-color: #FF7F00; flex: 1;">New</div>
+                                </div>
+                            </div>
+                            <!-- 信息 -->
+                            <div class="bar"></div>
+                        </li>
+                    </ul>
+                    <div class='btn-more'><a href=''><p>更多</p></a></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 侧边栏遮罩 -->
+        <div class="navbar-shadow"></div>
+    </div>
+    <!-- bottom -->
+
+    <script>
+        // window.onresize = function () {}
+
+        $(document).ready(function () {
+            var advert = new Swiper('.swiper-container', {
+                // 自动播放
+                autoplay:true,
+                loop: true, // 循环
+
+                // 分页器
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable :true,
+                },
+
+                // 前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    hiddenClass: 'my-button-hidden',
+                },
+
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="css/bread-crumbs/bread-crumbs.css">
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common/common.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="head">
+        <div class="inner">
+            <!-- logo -->
+            <a href=""><div class="logo"></div></a> <!-- Logo -->
+            <!-- 导航 客户端 -->
+            <div class="navbar">
+                <!-- menu-left -->
+                <div class="menu-left">
+                    <ul>
+                        <a href=""><li class="menu-item">首页</li></a>
+                        <a href=""><li class="menu-item">查找杂志</li></a>
+                        <a href=""><li class="menu-item">视频资料</li></a>
+                        <a href=""><li class="menu-item">帮助中心</li></a>
+                        <a href=""><li class="menu-item">VIP通道</li></a>
+                    </ul>
+                </div>
+                <!-- menu right -->
+                <div class="menu-right">
+                    <ul>
+                        <!-- 搜索框 -->
+                        <div class="serbox">
+                            <input class="search" type="text" placeholder="输入关键词搜索..." />
+                            <input class="search-btn" type="button" value="" />
+                        </div>
+                        <li><a href="">我的书架</a></li>
+                        <li class="login">
+                            <a href="">登录</a>
+                            <a class="register" href="">注册</a>
+                            <!--<a class="logout" href="">注销</a>-->
+                        </li>
+                        <li class="weixin"><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 切换按钮 手机端 -->
+            <button class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- 侧边栏 手机端 -->
+        <div class="navbar-collapse">
+            <!-- 标题栏 -->
+            <div class="navbar-head">
+                <button class="navbar-close"></button>     <!-- 关闭按钮 -->
+            </div>
+            <!-- 内容 -->
+            <div class="menu">
+                <div class="item">
+                    <div class="serbox">
+                        <input class="search" type="text" placeholder="输入关键词搜索..." />
+                        <input class="search-btn" type="submit" value="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="head-bottom"></div>
+    <!-- header end -->
+
+    <!-- 面包屑导航 -->
+    <div class="bread-crumbs">
+        <ul>
+            <li class="title">当前位置：</li>
+            <li><a href="/index">首页</a></li>
+            <li> > </li>
+            <li><a>帮助中心</a></li>
+        </ul>
+    </div>
+    <!-- 面包屑导航结束 -->
+
+    <!-- 内容开始 -->
+    <div class="wrap">
+        <div class="main">
+            <div class="nav-list">
+                <div class="inner">
+                    <ul>
+                        <!-- item -->
+                        <li class="item title"><a href="#c0">帮助首页</a></li>
+                        <li class="item"><a href="#c1">1、序</a></li>
+                        <li class="item"><a href="#c2">2、版权声明</a></li>
+                        <!-- item -->
+                        <li class="item title"><a href="#c3">关于杂志</a></li>
+                        <li class="item"><a href="#c4">1、杂志格式</a></li>
+                        <li class="item"><a href="#c5">2、为什么要收费？</a></li>
+                        <li class="item"><a href="#c6">3、可以免费阅读</a></li>
+                        <li class="item"><a href="#c7">4、杂志更新时间</a></li>
+                        <li class="item"><a href="#c8">5、订阅后可以重复下载吗？</a></li>
+                        <li class="item"><a href="#c9">6、可以批量订阅吗？</a></li>
+                        <li class="item"><a href="#c10">7、订阅全年杂志没有更新完整怎么办？</a></li>
+                        <!-- item -->
+                        <li class="item title"><a href="">关于充值</a></li>
+                        <li class="item"><a href="#c11">1、账户充值方式</a></li>
+                        <!-- item -->
+                        <li class="item title"><a href="">关于VIP</a></li>
+                        <li class="item"><a href="#c12">1、VIP会员特权</a></li>
+                        <li class="item"><a href="#c13">2、VIP收费体制</a></li>
+                        <li class="item"><a href="#c14">3、VIP会员到期，服务终止介绍</a></li>
+                        <li class="item title"><a href="">关于下载</a></li>
+                        <li class="item"><a href="#c15">1、杂志储存方式</a></li>
+                        <li class="item"><a href="#c16">2、杂志下载方式</a></li>
+                        <li class="item title"><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <!-- Title -->
+                <h3 id="c0">帮助首页</h3>
+                <div class="faqbox">
+                    <h4 id="c1">1、序</h4>
+                    <p>这里是一个高质量PDF电子杂志的分享基地，汇集了全球最受读者欢迎的众多顶级杂志，涉及建筑、时尚、摄影、财经、汽车、健身、艺术、旅游、手工、奢侈品等2000多个分类，超过30000本杂志。数字化的时代让我们打造一个绿色、低碳、环保的阅读空间，是纸质杂志所无法比拟的优势。<br>
+                        需要更多的杂志，请给我们留言，留言之前请先搜索，确认没有这本杂志后给我们留言！我们会根据需求热度优先整理！<br>
+                        整理范围：国外原版杂志（周期发行，如月刊季刊等），不做单本电子书或报纸，也不做国内中文杂志，本人仅有少量国内杂志，如果需求可以联系我们！<br>
+                        众所周知，国外的杂志无论从设计还是内容上都是很多设计师和读者获取知识和设计灵感重要来源，但是在支付和物流上有很多的不便，想购买原版实物杂志却碰到了很多困难，价格贵，支付不便，也不能很及时的拿到最新的杂志，所以电子杂志具有阅读方便（支持手机ipad电脑等各种设备），方便存储（大容量的百度网盘秒存），更新及时的特点，体现出极大的优势。<br>
+                        但是获取国外的电子杂志也不是那么容易收网络环境限制，能够找到并下载下来也是费劲周折，我们所做的就是把这些资源整理出来，方便大家阅读和下载。<br></p>
+                </div>
+                <div class="faqbox">
+                    <h4 id="c2">2、版权声明</h4>
+                    <p>本站登载的所有内容均为网络采集而来，其版权均属原作者所有，我们并非故意侵犯原作者或出版人的版权和利益， 我们在此郑重声明对原作者和出版人的尊重和感谢，若有侵权，请您立即来信通知，我们会在审核来信后及时清理侵权内容。<br>
+                        请支持和订阅正版杂志。保护知识产权，共建和谐社会。&nbsp;<br></p>
+                </div>
+                <!-- Title -->
+                <h3 id="c3">帮助首页</h3>
+                <div class="faqbox">
+                    <h4 id="c4">1、杂志格式</h4>
+                    <p>本站所有杂志均为PDF电子版，非实物杂志，需要实物杂志的朋友请绕道；<br>
+                        本站95%以上杂志是高清矢量杂志，请认准“True PDF”，其他均为非矢量版，但非扫描版！&nbsp;<br></p>
+                </div>
+                <div class="faqbox">
+                    <h4 id="c5">2、为什么要收费？</h4>
+                    <p>站内杂志都是自有渠道购买或整理而来，我们收费是用于维持网站的运行，毕竟我们付出了精力和时间去整理采集，也使用付费的服务器提供下载，所以收费是为了坚持下去；<br>
+                        请自行脑补自己每天通过百度搜索最新一期的某杂志，需要多少时间和精力。感觉累了请认同付费<br></p>
+                </div>
+                <div class="faqbox">
+                    <h4 id="c6">3、可以免费阅读</h4>
+                    <p>不须要注册，直接下载本站所有免费区杂志，每套杂志会随机挑选至少1本设为免费期次，供任意注册会员免费下载。<br>
+                        免费杂志下载入口：<a href="" rel="noopener"><i class="fa fa-external-link"></i> 点我进入</a><br></p>
+                </div>
+                <div class="faqbox">
+                    <h4 id="c8">4、杂志更新时间</h4>
+                </div>
+                <div class="faqbox">
+                    <h4 id="c9">5、订阅后可以重复下载吗？</h4>
+                    <p>一本杂志只需订阅一次，可以多设备无限制下载。</p><p></p><p>
+                    </p><div class="tips2">
+                    <i class="fa fa-exclamation-triangle"></i> 严厉打击多人共用同一账号（不同ip地址频繁登录同一账号），一经发现直接封号。&nbsp;</div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 侧边栏遮罩 -->
+        <div class="navbar-shadow"></div>
+    </div>
+
+    <script>
+        /*
+        var offsetNum = $($.attr(this, 'href')).offset(); //获取偏移量
+        offsetTop = offsetNum.top - 70; //偏移量具体调整
+        console.log(offsetNum);
+        $('html, body').animate({
+            scrollTop: offsetTop
+        }, 1000);
+        return false;
+        */
+
+        var a = $('a[href]', ".nav-list");
+        a.click(function () {
+            var href = $(this).attr('href');
+            var o = $(href).offset().top - 70;
+            console.log(href, o);
+            $('html, body').animate({
+                scrollTop: o
+            }, 1000);
+            return false;
+        });
+    </script>
+</body>
+</html>

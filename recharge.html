@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/recharge.css">
+    <link rel="stylesheet" href="css/bread-crumbs/bread-crumbs.css">
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common/common.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="head">
+        <div class="inner">
+            <!-- logo -->
+            <a href=""><div class="logo"></div></a> <!-- Logo -->
+            <!-- 导航 客户端 -->
+            <div class="navbar">
+                <!-- menu-left -->
+                <div class="menu-left">
+                    <ul>
+                        <a href=""><li class="menu-item">首页</li></a>
+                        <a href=""><li class="menu-item">查找杂志</li></a>
+                        <a href=""><li class="menu-item">视频资料</li></a>
+                        <a href=""><li class="menu-item">帮助中心</li></a>
+                        <a href=""><li class="menu-item">VIP通道</li></a>
+                    </ul>
+                </div>
+                <!-- menu right -->
+                <div class="menu-right">
+                    <ul>
+                        <!-- 搜索框 -->
+                        <div class="serbox">
+                            <input class="search" type="text" placeholder="输入关键词搜索..." />
+                            <input class="search-btn" type="button" value="" />
+                        </div>
+                        <li><a href="">我的书架</a></li>
+                        <li class="login">
+                            <a href="">登录</a>
+                            <a class="register" href="">注册</a>
+                            <!--<a class="logout" href="">注销</a>-->
+                        </li>
+                        <li class="weixin"><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 切换按钮 手机端 -->
+            <button class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- 侧边栏 手机端 -->
+        <div class="navbar-collapse">
+            <!-- 标题栏 -->
+            <div class="navbar-head">
+                <button class="navbar-close"></button>     <!-- 关闭按钮 -->
+            </div>
+            <!-- 内容 -->
+            <div class="menu">
+                <div class="item">
+                    <div class="serbox">
+                        <input class="search" type="text" placeholder="输入关键词搜索..." />
+                        <input class="search-btn" type="submit" value="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="head-bottom"></div>
+    <!-- header end -->
+
+    <!-- 面包屑导航 -->
+    <div class="bread-crumbs">
+        <ul>
+            <li class="title">当前位置：</li>
+            <li><a href="/index">首页</a></li>
+            <li> > </li>
+            <li><a>VIP中心</a></li>
+        </ul>
+    </div>
+    <!-- 面包屑导航结束 -->
+
+    <div class="wrap">
+        <div class="main">
+            <!-- user -->
+            <div class="user">
+                <div class="inner">
+                    <p>用户名：哈哈哈</p>
+                    <p>欢迎来到杂志多网站，祝您阅读愉快！</p>
+                    <p>剩余书币：1000</p>
+                </div>
+            </div>
+            <!-- recharge -->
+            <div class="recharge">
+                <div class="inner">
+                    <div class="nav-list">
+                        <div class="item item-selected"><a href=""><p>支付方式</p></a></div>
+                        <div class="item"><a href=""><p>微信支付</p></a></div>
+                        <div class="item"><a href=""><p>支付宝支付</p></a></div>
+                        <div class="item item-end"><a href=""><p>充值记录</p></a></div>
+                    </div>
+
+                    <div class="content">
+                        <div class="info">
+                            <p><span style="color: inherit;">充值流程</span><br></p><p><br></p><p>方式一：打开手机微信扫描二维码，输入付款金额和备注支付即可到账。</p><p>1.首先打开手机微信；</p><p>2.扫描右侧二维码</p><p>3.填写付款金额</p><p>4.备注填写:网站注册用户名</p><p><br></p><p>温馨提示：请正确填写付款备注,否则无法自动到账..</p><p><br></p><p>方式二：扫描二维码添加微信好友，再转账。</p><p><br></p><p>到账时间：付款成功后,耐心等待15-30秒钟出现成功提示！</p><p><br></p><p>注意事项：.</p><p>如果忘记备注填写用户名或长时间未到账，可以扫描二维码添加微信好友询问了解，或再一次充值任意金额并加上备注填写用户名称。</p>
+                        </div>
+                        <div class="code-img">
+                            <img src="img/wx_code.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 侧边栏遮罩 -->
+        <div class="navbar-shadow"></div>
+    </div>
+</body>
+</html>

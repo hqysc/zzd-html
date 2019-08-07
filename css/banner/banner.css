@@ -1,0 +1,23 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .image {
+    width: 100%;
+    max-width: 1290px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.banner .image  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1290px) {
+    /* 隐藏轮播图左右导航按钮 */
+    .swiper-button-prev { display: none; }
+    .swiper-button-next { display: none; }
+}

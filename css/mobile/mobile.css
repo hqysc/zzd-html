@@ -1,0 +1,73 @@
+/* 导航按钮 手机端 */
+.tab-head {
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+.tab-head ul {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-head li {
+    width: 17.8%;
+    height: 15vw;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+
+.tab-head .title {
+    font-size: 2.8vw;
+    line-height: 2.8vw;
+    /*background-color: #9acfea;*/
+}
+
+.tab-head a {
+    width: 100%;
+    height: 100%;
+    color: #4C4C4C;
+    display: block;
+    overflow: hidden;
+}
+
+.tab-head .icon {
+    width: 7.8vw;
+    height: 7.8vw;
+    margin: 1.6vw auto 1.4vw;
+}
+
+/* 图标 */
+.tab-head .icon-search {
+    background: transparent url("../../icon/tab-icon/search.png") no-repeat center;
+    background-size: contain;   /* 横向拉伸 在background下面 */
+}
+
+.tab-head .icon-vedio {
+    background: transparent url("../../icon/tab-icon/youtube.png") no-repeat center;
+    background-size: contain;   /* 横向拉伸 在background下面 */
+}
+
+.tab-head .icon-discovery {
+    background: transparent url("../../icon/tab-icon/discovery.png") no-repeat center;
+    background-size: contain;   /* 横向拉伸 在background下面 */
+}
+
+.tab-head .icon-cart {
+    background: transparent url("../../icon/tab-icon/cart_empty.png") no-repeat center;
+    background-size: contain;   /* 横向拉伸 在background下面 */
+}
+
+.tab-head .icon-wechat {
+    background: transparent url("../../icon/tab-icon/wechat.png") no-repeat center;
+    background-size: contain;   /* 横向拉伸 在background下面 */
+}
+
+@media only screen and (max-width: 640px) {
+    .tab-head { /* 导航标签 */
+        display: block;
+    }
+}
